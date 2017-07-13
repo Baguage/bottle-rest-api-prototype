@@ -18,6 +18,8 @@ import os
 os.chdir(os.path.dirname(__file__))
 
 import bottle
+# Not exactly sure "import main" is enough, though.
+# noinspection PyUnresolvedReferences
 import main
 # Do NOT use bottle.run() with mod_wsgi
 application = bottle.default_app()
